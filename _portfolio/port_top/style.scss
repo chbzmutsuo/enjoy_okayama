@@ -1,0 +1,168 @@
+$ColorBase: black;
+$CProfile:rgba(189, 178, 107, 1);
+
+.flex{
+  display: flex;
+  flex-direction: column;
+}
+
+.center{
+  width: 100%;
+  margin: 0 auto;
+}
+.contentWidth {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.marginTop {
+  margin-top: 50px;
+}
+
+// html {
+//   // font-family: "Andada Pro", serif;
+//   // font-family: "Klee One", cursive;
+// }
+
+img {
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  cursor: pointer;
+  text-align: center;
+  &::before {
+    margin-right: 20px;
+  }
+  color: $ColorBase;
+  text-decoration: none;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.sub-title {
+  color: rgb(122, 121, 121);
+}
+
+.mainCopy {
+  text-align: center;
+}
+
+header {
+  height: 400px;
+}
+.navMenu {
+  display: none;
+  ul {
+    width: 300px;
+    @extend .flex;
+    background-color: black;
+    li {
+      color: white;
+    }
+  }
+}
+
+section{
+  @extend .contentWidth;
+}
+
+.section-heading {
+  text-align: center;
+  width: 350px;
+  border-bottom: 1px solid rgba(72, 0, 255, 0.5);
+  margin: 50px auto;
+}
+
+.works{
+  p{
+    text-align: center;
+  }
+}
+.works-wrapper {
+  @extend .flex;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  li {
+    a:hover{
+      color:red;
+    }
+    border: 5px groove darkgrey;
+    padding: 5%;
+    margin-bottom: 30px;
+    h3 {
+      background-color: rgb(76, 75, 75);
+      color: white;
+      font-weight: bold;
+      margin: 0;
+    }
+    img{
+      height: 300px;
+    }
+  }
+}
+
+
+.about{
+  h3{
+    background-color: $CProfile;
+    border-radius: 5px;
+    box-shadow: 5px 5px 3px darkgrey;
+    width: 150px;
+    text-align: center;
+    padding: 3px 15px;
+  }
+  .flex-box{
+   @extend .flex;
+  }
+
+  .info-right{
+    display: flex;
+    flex-direction: row;
+    .certification, .hobby{
+      width: 50%;
+
+    }
+  }
+  .table{
+    font-size: 15px;
+    @extend .center;
+    border-collapse: separate;
+    border-spacing: 20px;
+    
+    tr{
+      
+      td{
+        border-bottom: 2px solid darkgrey;
+        &:nth-child(1){
+          text-align: center;   
+         }  
+      }
+      
+      
+    }
+  }
+  
+
+}
+
+
+dl{
+  @extend .center;
+  width: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  dt{
+    width: 40%;
+  }
+  dd{
+    width: 60%;
+    margin:0;
+  }
+}

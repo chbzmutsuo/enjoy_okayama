@@ -1,0 +1,166 @@
+.flex, .navMenu ul, .works-wrapper, .about .flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.center, .about .table, dl {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contentWidth, section {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.marginTop {
+  margin-top: 50px;
+}
+
+img {
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  cursor: pointer;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+}
+
+a::before {
+  margin-right: 20px;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+.sub-title {
+  color: #7a7979;
+}
+
+.mainCopy {
+  text-align: center;
+}
+
+header {
+  height: 400px;
+}
+
+.navMenu {
+  display: none;
+}
+
+.navMenu ul {
+  width: 300px;
+  background-color: black;
+}
+
+.navMenu ul li {
+  color: white;
+}
+
+.section-heading {
+  text-align: center;
+  width: 350px;
+  border-bottom: 1px solid rgba(72, 0, 255, 0.5);
+  margin: 50px auto;
+}
+
+.works p {
+  text-align: center;
+}
+
+.works-wrapper {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.works-wrapper li {
+  border: 5px groove darkgrey;
+  padding: 5%;
+  margin-bottom: 30px;
+}
+
+.works-wrapper li a:hover {
+  color: red;
+}
+
+.works-wrapper li h3 {
+  background-color: #4c4b4b;
+  color: white;
+  font-weight: bold;
+  margin: 0;
+}
+
+.works-wrapper li img {
+  height: 300px;
+}
+
+.about h3 {
+  background-color: #bdb26b;
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 3px darkgrey;
+          box-shadow: 5px 5px 3px darkgrey;
+  width: 150px;
+  text-align: center;
+  padding: 3px 15px;
+}
+
+.about .info-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.about .info-right .certification, .about .info-right .hobby {
+  width: 50%;
+}
+
+.about .table {
+  font-size: 15px;
+  border-collapse: separate;
+  border-spacing: 20px;
+}
+
+.about .table tr td {
+  border-bottom: 2px solid darkgrey;
+}
+
+.about .table tr td:nth-child(1) {
+  text-align: center;
+}
+
+dl {
+  width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+dl dt {
+  width: 40%;
+}
+
+dl dd {
+  width: 60%;
+  margin: 0;
+}
+/*# sourceMappingURL=style.css.map */
